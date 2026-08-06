@@ -1,32 +1,48 @@
-# React + TypeScript + Vite
+<h1 align = "center">⚠️ WARNING ⚠️</h1>
+The project is under construction, you will not be able to see the full information about the menu or the reservations until the backend is finished
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+<h1 align = "center"> 🍔 BurgerGame 🎮 </h1>
 
-Currently, two official plugins are available:
+## About
+This project is a portfolio application developed to demonstrate modern frontend development practices using React, TypeScript, and Vite.
+It simulates a restaurant website where users can browse the menu and make table reservations through a RESTful backend.
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Home 🏠
+Page dedicated to display information about the restaurant, contacts and addresses
+### Menu 📃
+Page dedicated to display all the available dishes in the restaurant, they are all game-themed so you might find easter eggs :)
 
-## React Compiler
+### Reserve 🎯
+Page dedicated to allow reservations in the restaurant, the reserve can only be done 1 week before the date you are planning
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### About 🧑‍🍳
+Page dedicated to show the staff and the restaurant themed tables
 
-## Expanding the Oxlint configuration
+## Technologies
+- React
+- Vite
+- TypeScript
+- React Router
+- Tailwind CSS
+- Axios
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Getting Started
+### Option 1: Run locally
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+You can access the project locally only to check the files and review the code infrastructure using these commands. (without connection to the API some features can be compromised).
+Clone the repository or download and run the following commands in your IDE
+```bash
+npm install
+npm run dev
+
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Option 2: Vercel
+You can access the hosted project fully functional here (Still needs the link)
+
+## Project Structure
+<img width="1598" height="696" alt="basic_infra_project" src="https://github.com/user-attachments/assets/88d4a27c-d8de-4686-a3e5-1bf81dcdaa87" />
+
+## License
+MIT - for more info please check the LICENSE file located at the ROOT of the project
