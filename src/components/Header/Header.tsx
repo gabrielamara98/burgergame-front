@@ -1,20 +1,20 @@
 export function Header() {
     return(
-        <header className="min-w-full flex justify-between border py-4 px-12 bg-red-500 items-center">
+        <header className="grid grid-cols-[1fr_auto_1fr] items-center">
         {/* Left links */}
             <nav>
-                <ul className="flex gap-6">
-                    <li><a href="/" className="font-pixel">Home</a></li>
-                    <li><a href="/" className="font-pixel">Menu</a></li>
+                <ul className="flex justify-around">
+                    <li><a href="/" className="font-pixel text-2xl">Home</a></li>
+                    <li><a href="/" className="font-pixel text-2xl">Menu</a></li>
                 </ul>
             </nav>
         {/* Logo */}
-            <a><img src=".\src\assets\logo.svg" className="w-24"></img></a>
+            <a className="justify-self-center"><img src=".\src\assets\logo.svg" className="w-24"></img></a>
         {/* Right Links */}
             <nav>
-                <ul className="flex gap-6">
-                    <li><a href="/" className="font-pixel">Reserve</a></li>
-                    <li><a href="/" className="font-pixel">About</a></li>
+                <ul className="flex justify-around">
+                    <li><a href="/" className="font-pixel text-2xl">Reserve</a></li>
+                    <li><a href="/" className="font-pixel text-2xl">About</a></li>
                 </ul>
             </nav>
         </header>
