@@ -1,20 +1,22 @@
+import { Link } from "react-router-dom";
+
 export function Header() {
     return(
         <header className="grid grid-cols-[1fr_auto_1fr] items-center">
         {/* Left links */}
             <nav>
                 <ul className="flex justify-around">
-                    <li><a href="/" className="font-pixel text-2xl">Home</a></li>
-                    <li><a href="/" className="font-pixel text-2xl">Menu</a></li>
+                    <li><Link to="/" className="font-pixel text-2xl">Home</Link></li>
+                    <li><Link to="/menu" className="font-pixel text-2xl">Menu</Link></li>
                 </ul>
             </nav>
         {/* Logo */}
-            <a className="justify-self-center"><img src=".\src\assets\logo.svg" className="w-24"></img></a>
+            <Link to ="/" className="justify-self-center"><img src=".\src\assets\logo.svg" className="w-24"></img></Link>
         {/* Right Links */}
             <nav>
                 <ul className="flex justify-around">
-                    <li><a href="/" className="font-pixel text-2xl">Reserve</a></li>
-                    <li><a href="/" className="font-pixel text-2xl">About</a></li>
+                    <li><Link to="/reserve" className="font-pixel text-2xl">Reserve</Link></li>
+                    <li><Link to="/about" className="font-pixel text-2xl">About</Link></li>
                 </ul>
             </nav>
         </header>
